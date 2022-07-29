@@ -1,5 +1,6 @@
-##CST-150-WeightOnMars
-#By: Noah Funderburgh
+# CST-150-WeightOnMars
+By: Noah Funderburgh
+
 Loom Video URL: https://www.loom.com/share/50c5806550d646d9becac73db3f081c9
 
 This program will calculate your weight on mars. All you have to do is enter in a weight and
