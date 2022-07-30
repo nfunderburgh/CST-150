@@ -17,24 +17,29 @@ namespace HelloWorld
             InitializeComponent();
         }
 
-        private void Label(object sender, EventArgs e)
-        {
-            Console.WriteLine("Label!");
-        }
-
         private void Click_This(object sender, EventArgs e)
         {
-            Console.WriteLine("Button!");
+            textBox1.Text = "Button was pressed!";
         }
 
-        private void Date(object sender, EventArgs e)
+        private void checkBox_Checked(object sender, EventArgs e)
         {
-            Console.WriteLine("Date!");
+            textBox1.Text = "Checkbox is checked!";
         }
 
-        private void CheckBox(object sender, EventArgs e)
+        private void dateTime_Picker(object sender, EventArgs e)
         {
-            Console.WriteLine("CheckBox!");
+            textBox1.Text = "Date has been picked!";
+        }
+
+        private void radioButton_Selected(object sender, EventArgs e)
+        {
+            textBox1.Text = "Radio button was selected!";
+        }
+
+        private void label_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "Label was pressed!";
         }
     }
 }

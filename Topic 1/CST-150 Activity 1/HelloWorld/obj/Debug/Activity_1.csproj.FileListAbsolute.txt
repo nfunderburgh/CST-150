@@ -9,3 +9,14 @@ C:\Users\APR Services\Desktop\Activity_1\HelloWorld\obj\Debug\Activity_1.csproj.
 C:\Users\APR Services\Desktop\Activity_1\HelloWorld\obj\Debug\Activity_1.csproj.CoreCompileInputs.cache
 C:\Users\APR Services\Desktop\Activity_1\HelloWorld\obj\Debug\HelloWorld.exe
 C:\Users\APR Services\Desktop\Activity_1\HelloWorld\obj\Debug\HelloWorld.pdb
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1.csproj.AssemblyReference.cache
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.Form1.resources
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1.csproj.GenerateResource.cache
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1.csproj.CoreCompileInputs.cache
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.pdb
