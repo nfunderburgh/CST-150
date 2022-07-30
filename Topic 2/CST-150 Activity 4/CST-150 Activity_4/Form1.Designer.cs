@@ -92,7 +92,7 @@
             this.Controls.Add(this.ConvertButton);
             this.Controls.Add(this.SecondsTextbox);
             this.Name = "Title";
-            this.Text = "Your Weight On Mars";
+            this.Text = "Time Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
