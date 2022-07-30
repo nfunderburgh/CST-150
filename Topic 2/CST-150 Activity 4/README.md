@@ -1,5 +1,4 @@
-Video URL: https://www.loom.com/share/5951c66bae7b402199c526f2c1ac8f99
-# CST-150-WeightOnMars
+# CST-150-TimeCalculator
 By: Noah Funderburgh
 
 Loom URL: https://www.loom.com/share/5951c66bae7b402199c526f2c1ac8f99
