@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.ClickThisButton = new System.Windows.Forms.Button();
             this.outputTextBox = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.checkBox = new System.Windows.Forms.CheckBox();
+            this.radioButton = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // ClickThisButton
             // 
-            this.button1.Location = new System.Drawing.Point(331, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Click this";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonToTextBoxOutput);
+            this.ClickThisButton.Location = new System.Drawing.Point(331, 247);
+            this.ClickThisButton.Name = "ClickThisButton";
+            this.ClickThisButton.Size = new System.Drawing.Size(100, 23);
+            this.ClickThisButton.TabIndex = 0;
+            this.ClickThisButton.Text = "Click this";
+            this.ClickThisButton.UseVisualStyleBackColor = true;
+            this.ClickThisButton.Click += new System.EventHandler(this.buttonToTextBoxOutput);
             // 
             // outputTextBox
             // 
@@ -55,56 +55,56 @@
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(457, 251);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(74, 17);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "checkBox";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBoxToTextBoxOutput);
+            this.checkBox.AutoSize = true;
+            this.checkBox.Location = new System.Drawing.Point(457, 251);
+            this.checkBox.Name = "checkBox1";
+            this.checkBox.Size = new System.Drawing.Size(74, 17);
+            this.checkBox.TabIndex = 2;
+            this.checkBox.Text = "checkBox";
+            this.checkBox.UseVisualStyleBackColor = true;
+            this.checkBox.CheckedChanged += new System.EventHandler(this.checkBoxToTextBoxOutput);
             // 
             // radioButton1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(218, 253);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(79, 17);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButtonToTextBoxOutput);
+            this.radioButton.AutoSize = true;
+            this.radioButton.Location = new System.Drawing.Point(218, 253);
+            this.radioButton.Name = "radioButton1";
+            this.radioButton.Size = new System.Drawing.Size(79, 17);
+            this.radioButton.TabIndex = 3;
+            this.radioButton.TabStop = true;
+            this.radioButton.Text = "radioButton";
+            this.radioButton.UseVisualStyleBackColor = true;
+            this.radioButton.CheckedChanged += new System.EventHandler(this.radioButtonToTextBoxOutput);
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(554, 250);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 4;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimeToTextBoxOutput);
+            this.dateTimePicker.Location = new System.Drawing.Point(554, 250);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker.TabIndex = 4;
+            this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimeToTextBoxOutput);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(155, 255);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "label";
-            this.label1.Click += new System.EventHandler(this.labelToTextBoxOutput);
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(155, 255);
+            this.label.Name = "label1";
+            this.label.Size = new System.Drawing.Size(29, 13);
+            this.label.TabIndex = 5;
+            this.label.Text = "label";
+            this.label.Click += new System.EventHandler(this.labelToTextBoxOutput);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.dateTimePicker);
+            this.Controls.Add(this.radioButton);
+            this.Controls.Add(this.checkBox);
             this.Controls.Add(this.outputTextBox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ClickThisButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -114,12 +114,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ClickThisButton;
         private System.Windows.Forms.TextBox outputTextBox;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox;
+        private System.Windows.Forms.RadioButton radioButton;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Label label;
     }
 }
 
