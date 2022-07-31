@@ -31,7 +31,7 @@
             this.SecondsTextbox = new System.Windows.Forms.TextBox();
             this.ConvertButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.EarthLabel = new System.Windows.Forms.Label();
+            this.SecondsLabel = new System.Windows.Forms.Label();
             this.TimeOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -60,15 +60,15 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 3;
             // 
-            // EarthLabel
+            // SecondsLabel
             // 
-            this.EarthLabel.AutoSize = true;
-            this.EarthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EarthLabel.Location = new System.Drawing.Point(8, 62);
-            this.EarthLabel.Name = "EarthLabel";
-            this.EarthLabel.Size = new System.Drawing.Size(211, 20);
-            this.EarthLabel.TabIndex = 4;
-            this.EarthLabel.Text = "Enter amount of seconds";
+            this.SecondsLabel.AutoSize = true;
+            this.SecondsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondsLabel.Location = new System.Drawing.Point(8, 62);
+            this.SecondsLabel.Name = "SecondsLabel";
+            this.SecondsLabel.Size = new System.Drawing.Size(211, 20);
+            this.SecondsLabel.TabIndex = 4;
+            this.SecondsLabel.Text = "Enter amount of seconds";
             // 
             // TimeOutput
             // 
@@ -87,7 +87,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(369, 237);
             this.Controls.Add(this.TimeOutput);
-            this.Controls.Add(this.EarthLabel);
+            this.Controls.Add(this.SecondsLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ConvertButton);
             this.Controls.Add(this.SecondsTextbox);
@@ -103,7 +103,7 @@
         private System.Windows.Forms.TextBox SecondsTextbox;
         private System.Windows.Forms.Button ConvertButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label EarthLabel;
+        private System.Windows.Forms.Label SecondsLabel;
         private System.Windows.Forms.Label TimeOutput;
     }
 }
