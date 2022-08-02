@@ -18,17 +18,21 @@ namespace CST_150_Activity_5
             InitializeComponent();
         }
 
-        private void Read_File_Click(object sender, EventArgs e)
+        private async void Read_File_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
             string filename = openFileDialog1.FileName;
             string[] lines = File.ReadAllLines(filename);
             lines = lines.Select(v => v.ToLower()).ToArray();
-            
-            
+
+            Array.Sort(lines);
+            richTextBox1.Text = "First Word Alphabetically: " + lines[0];
+            richTextBox1.Text = richTextBox1.Text + "Last Word Alphabetically: " + lines[lines.Count()-1];
+
             string result = longestWord(lines);
             string test = vowelCounter(lines);
-            
+
+            File.WriteAllText("Result.txt", test);
 
         }
 
@@ -46,20 +50,26 @@ namespace CST_150_Activity_5
 
         private string vowelCounter(string[] lines)
         {
-            int vowelCount = 0;
-            string longestWord = "";
+            int currVowelCount = 0;
+            int mostVowelCount = 0;
+            string wordWithMostVowels = "";
             for (int i = 0; i < lines.Count(); i++)
             {
                 for (int j = 0; j < lines[i].Length; j++)
                 {
                     if (lines[i][j] == 'a' || lines[i][j] == 'e' || lines[i][j] == 'i' || lines[i][j] == 'o' || lines[i][j] == 'u')
                     {
-                        vowelCount++;
+                        currVowelCount++;
                     }
-                   
+                }
+                if (currVowelCount > mostVowelCount)
+                {
+                    mostVowelCount = currVowelCount;
+                    wordWithMostVowels = lines[i];
+                    currVowelCount = 0;
                 }
             }
-            return longestWord;
+            return wordWithMostVowels;
         }
 
     }
