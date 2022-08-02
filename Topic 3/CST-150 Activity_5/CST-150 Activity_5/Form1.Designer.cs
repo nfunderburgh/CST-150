@@ -35,7 +35,7 @@
             // 
             // Read_File
             // 
-            this.Read_File.Location = new System.Drawing.Point(132, 212);
+            this.Read_File.Location = new System.Drawing.Point(231, 53);
             this.Read_File.Name = "Read_File";
             this.Read_File.Size = new System.Drawing.Size(75, 23);
             this.Read_File.TabIndex = 0;
@@ -49,7 +49,8 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(132, 28);
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(96, 115);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(341, 128);
             this.richTextBox1.TabIndex = 1;
@@ -59,7 +60,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 381);
+            this.ClientSize = new System.Drawing.Size(545, 345);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.Read_File);
             this.Name = "Form1";

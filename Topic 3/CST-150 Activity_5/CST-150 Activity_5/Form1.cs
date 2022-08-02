@@ -26,13 +26,16 @@ namespace CST_150_Activity_5
             lines = lines.Select(v => v.ToLower()).ToArray();
 
             Array.Sort(lines);
-            richTextBox1.Text = "First Word Alphabetically: " + lines[0];
-            richTextBox1.Text = richTextBox1.Text + "Last Word Alphabetically: " + lines[lines.Count()-1];
 
-            string result = longestWord(lines);
-            string test = vowelCounter(lines);
+            string longWord = longestWord(lines);
+            string vowelWord = vowelCounter(lines);
 
-            File.WriteAllText("Result.txt", test);
+            string[] output = { "First Word Alphabetically: " + lines[0], "Last Word Alphabetically: " + lines[lines.Count() - 1],
+            "Longest Word: " + longWord, "Word With Most Vowels: " + vowelWord };
+
+            File.WriteAllLines("Result.txt", output);
+            richTextBox1.Text = string.Join("\n", output);
+
 
         }
 

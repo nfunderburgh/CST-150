@@ -1,1 +1,4 @@
-suuup
+First Word Alphabetically: hi
+Last Word Alphabetically: test2
+Longest Word: suuup
+Word With Most Vowels: suuup
