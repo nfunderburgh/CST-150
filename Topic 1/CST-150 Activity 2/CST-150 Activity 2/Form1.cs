@@ -24,10 +24,12 @@ namespace CST_150_Activity_2
             // Weight on Mars = (Weight on Earth / 9.81) * 3.71
             try
             {
-                double temp = double.Parse(EarthWeight.Text);
-                temp = temp / 9.81;
-                temp = temp * 3.711;
-                MarsWeight.Text = temp.ToString("N6");
+                double earthGravitationalForce = 9.81;
+                double marsGravitationalForce = 3.711;
+                double weightOnMars = double.Parse(EarthWeight.Text);
+                weightOnMars = weightOnMars / earthGravitationalForce;
+                weightOnMars = weightOnMars * marsGravitationalForce;
+                MarsWeight.Text = weightOnMars.ToString("N3");
             }
             catch {
                 MarsWeight.Text = "Invalid data";

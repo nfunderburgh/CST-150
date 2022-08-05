@@ -20,3 +20,14 @@ C:\Users\APR Services\Desktop\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CS
 C:\Users\APR Services\Desktop\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST-150 Activity 2.csproj.CoreCompileInputs.cache
 C:\Users\APR Services\Desktop\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST-150 Activity 2.exe
 C:\Users\APR Services\Desktop\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST-150 Activity 2.pdb
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\bin\Debug\CST-150 Activity 2.exe.config
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\bin\Debug\CST-150 Activity 2.exe
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\bin\Debug\CST-150 Activity 2.pdb
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST-150 Activity 2.csproj.AssemblyReference.cache
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST-150 Activity 2.csproj.SuggestedBindingRedirects.cache
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST_150_Activity_2.Title.resources
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST_150_Activity_2.Properties.Resources.resources
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST-150 Activity 2.csproj.GenerateResource.cache
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST-150 Activity 2.csproj.CoreCompileInputs.cache
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST-150 Activity 2.exe
+D:\Github\CST-150\Topic 1\CST-150 Activity 2\CST-150 Activity 2\obj\Debug\CST-150 Activity 2.pdb
