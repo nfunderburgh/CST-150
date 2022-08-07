@@ -17,23 +17,24 @@ namespace CST_150_Activity_7
             InitializeComponent();
         }
 
-        private void CalculateButton_Click(object sender, EventArgs e)
+        private void NumberTermsTextbox_TextChanged(object sender, EventArgs e)
         {
             double numberOfTermsForPi;
             double pi = 0;
             double oddNums = 1;
             int four = 4;
-            int two = 4;
+            int two = 2;
             try
             {
-                numberOfTermsForPi = double.Parse(NumberItemsTextbox.Text);
+                numberOfTermsForPi = double.Parse(NumberTermsTextbox.Text);
                 for (int i = 0; i < numberOfTermsForPi; i++)
                 {
-
-                    if ( i % 2 == 1)
+                    //Odd
+                    if (i % 2 == 1)
                     {
                         pi = pi - (four / oddNums);
                     }
+                    //Even
                     else
                     {
                         pi = pi + (four / oddNums);

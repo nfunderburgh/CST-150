@@ -1,0 +1,4 @@
+First Word Alphabetically: a
+Last Word Alphabetically: your
+Longest Word: because
+Word With Most Vowels: would
