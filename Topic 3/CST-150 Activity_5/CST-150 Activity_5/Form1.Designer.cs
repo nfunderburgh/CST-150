@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Read_File = new System.Windows.Forms.Button();
+            this.ReadFileButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.mainTextbox = new System.Windows.Forms.RichTextBox();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Read_File
+            // ReadFileButton
             // 
-            this.Read_File.Location = new System.Drawing.Point(231, 53);
-            this.Read_File.Name = "Read_File";
-            this.Read_File.Size = new System.Drawing.Size(75, 23);
-            this.Read_File.TabIndex = 0;
-            this.Read_File.Text = "Read File";
-            this.Read_File.UseVisualStyleBackColor = true;
-            this.Read_File.Click += new System.EventHandler(this.Read_File_Click);
+            this.ReadFileButton.Location = new System.Drawing.Point(231, 53);
+            this.ReadFileButton.Name = "ReadFileButton";
+            this.ReadFileButton.Size = new System.Drawing.Size(75, 23);
+            this.ReadFileButton.TabIndex = 0;
+            this.ReadFileButton.Text = "Read File";
+            this.ReadFileButton.UseVisualStyleBackColor = true;
+            this.ReadFileButton.Click += new System.EventHandler(this.ReadFileButton_Click);
             // 
             // openFileDialog1
             // 
@@ -49,31 +50,43 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(96, 115);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(341, 128);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.mainTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainTextbox.Location = new System.Drawing.Point(96, 115);
+            this.mainTextbox.Name = "richTextBox1";
+            this.mainTextbox.Size = new System.Drawing.Size(341, 128);
+            this.mainTextbox.TabIndex = 1;
+            this.mainTextbox.Text = "";
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(231, 278);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(75, 23);
+            this.ExitButton.TabIndex = 2;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(545, 345);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.Read_File);
+            this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.mainTextbox);
+            this.Controls.Add(this.ReadFileButton);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Dealing with Strings";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Read_File;
+        private System.Windows.Forms.Button ReadFileButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox mainTextbox;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
 

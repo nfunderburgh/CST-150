@@ -18,27 +18,38 @@ namespace CST_150_Activity_5
             InitializeComponent();
         }
 
-        private async void Read_File_Click(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ReadFileButton_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
             string filename = openFileDialog1.FileName;
             string[] lines = File.ReadAllLines(filename);
+            //turns all strings into lowercase strings
             lines = lines.Select(v => v.ToLower()).ToArray();
-
+            //Sorts lines by alphabetical order
             Array.Sort(lines);
 
             string longWord = longestWord(lines);
-            string vowelWord = vowelCounter(lines);
+            string wordWithMostVowels = vowelCounter(lines);
 
             string[] output = { "First Word Alphabetically: " + lines[0], "Last Word Alphabetically: " + lines[lines.Count() - 1],
-            "Longest Word: " + longWord, "Word With Most Vowels: " + vowelWord };
+            "Longest Word: " + longWord, "Word With Most Vowels: " + wordWithMostVowels };
 
-            File.WriteAllLines("Result.txt", output);
-            richTextBox1.Text = string.Join("\n", output);
+            File.WriteAllLines("../../../Output.txt", output);
+            mainTextbox.Text = string.Join("\n", output);
 
 
         }
 
+        /*****************************************************************
+         * this function will find the longest word in an array of strings
+         * @param - array of strings to search for the longest word
+         * @return - string with most characters
+         * **************************************************************/
         private string longestWord(string[] lines)
         {
             string longestWord = "";
@@ -51,10 +62,15 @@ namespace CST_150_Activity_5
             return longestWord;
         }
 
+        /*****************************************************************
+        * this function will find the longest word in an array of with the most vowels.
+        * @param - array of strings to search for word with most vowels
+        * @return - string with the most vowels meaning characters a,e,i,o,u 
+        * **************************************************************/
         private string vowelCounter(string[] lines)
         {
             int currVowelCount = 0;
-            int mostVowelCount = 0;
+            int highestVowelCount = 0;
             string wordWithMostVowels = "";
             for (int i = 0; i < lines.Count(); i++)
             {
@@ -65,15 +81,14 @@ namespace CST_150_Activity_5
                         currVowelCount++;
                     }
                 }
-                if (currVowelCount > mostVowelCount)
+                if (currVowelCount > highestVowelCount)
                 {
-                    mostVowelCount = currVowelCount;
+                    highestVowelCount = currVowelCount;
                     wordWithMostVowels = lines[i];
                     currVowelCount = 0;
                 }
             }
             return wordWithMostVowels;
         }
-
     }
 }
