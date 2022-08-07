@@ -22,8 +22,8 @@ namespace CST_150_Activity_7
             try
             {
                 int FatGrams = Int32.Parse(FatGramTextbox.Text);
-                FatGrams = FatCalories(FatGrams);
-                FatGramLabel.Text = Convert.ToString(FatGrams);
+                int CaloriesFromFat = FatCalories(FatGrams);
+                FatGramLabel.Text = Convert.ToString(CaloriesFromFat);
             }
             catch
             {
@@ -36,8 +36,8 @@ namespace CST_150_Activity_7
             try
             {
                 int CarbGrams = Int32.Parse(CarbGramTextbox.Text);
-                CarbGrams = CarbCalories(CarbGrams);
-                CarbGramLabel.Text = Convert.ToString(CarbGrams);
+                int CaloriesFromCarbs = CarbCalories(CarbGrams);
+                CarbGramLabel.Text = Convert.ToString(CaloriesFromCarbs);
             }
             catch
             {
@@ -54,8 +54,8 @@ namespace CST_150_Activity_7
          ************************************************************/
         private int FatCalories(int FatGrams)
         {
-            FatGrams *= FatGrams * 9;
-            return FatGrams;
+            int CaloriesFromFat = FatGrams * 9;
+            return CaloriesFromFat;
         }
 
         /***********************************************************
@@ -65,8 +65,8 @@ namespace CST_150_Activity_7
         *********************************************************/
         private int CarbCalories(int CarbGrams)
         {
-            CarbGrams *= CarbGrams * 4;
-            return CarbGrams;
+            int CaloriesFromCarbs = CarbGrams * 4;
+            return CaloriesFromCarbs;
         }
 
         private void ExitBtn_Click(object sender, EventArgs e)
