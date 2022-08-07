@@ -24,6 +24,8 @@ namespace CST_150_Activity_7
             double oddNums = 1;
             int four = 4;
             int two = 2;
+
+            //Formula used (4/1) - (4/3) + (4/5) -(4/7) ...
             try
             {
                 numberOfTermsForPi = double.Parse(NumberTermsTextbox.Text);
