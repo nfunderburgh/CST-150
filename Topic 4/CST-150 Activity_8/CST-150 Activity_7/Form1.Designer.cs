@@ -30,13 +30,13 @@
         {
             this.FatGramTextbox = new System.Windows.Forms.TextBox();
             this.CarbGramTextbox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.FatGramsLabel = new System.Windows.Forms.Label();
             this.FatGramLabel = new System.Windows.Forms.Label();
             this.CarbGramLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.CarbGramsLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.CaloriesFromFatLabel = new System.Windows.Forms.Label();
+            this.CaloriesFromCarbsLabel = new System.Windows.Forms.Label();
             this.ExitBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -56,15 +56,15 @@
             this.CarbGramTextbox.TabIndex = 1;
             this.CarbGramTextbox.TextChanged += new System.EventHandler(this.CarbGramTextbox_TextChanged);
             // 
-            // label1
+            // FatGramsLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(115, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 18);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Fat grams";
+            this.FatGramsLabel.AutoSize = true;
+            this.FatGramsLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FatGramsLabel.Location = new System.Drawing.Point(115, 73);
+            this.FatGramsLabel.Name = "FatGramsLabel";
+            this.FatGramsLabel.Size = new System.Drawing.Size(67, 18);
+            this.FatGramsLabel.TabIndex = 2;
+            this.FatGramsLabel.Text = "Fat grams";
             // 
             // FatGramLabel
             // 
@@ -84,15 +84,15 @@
             this.CarbGramLabel.Size = new System.Drawing.Size(0, 18);
             this.CarbGramLabel.TabIndex = 4;
             // 
-            // label4
+            // CarbGramsLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(104, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 18);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Carb Grams";
+            this.CarbGramsLabel.AutoSize = true;
+            this.CarbGramsLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CarbGramsLabel.Location = new System.Drawing.Point(104, 108);
+            this.CarbGramsLabel.Name = "CarbGramsLabel";
+            this.CarbGramsLabel.Size = new System.Drawing.Size(78, 18);
+            this.CarbGramsLabel.TabIndex = 5;
+            this.CarbGramsLabel.Text = "Carb Grams";
             // 
             // label2
             // 
@@ -104,25 +104,25 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Calories from Fat and Carbs Converter";
             // 
-            // label3
+            // CaloriesFromFatLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(64, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 18);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Calories from Fat:";
+            this.CaloriesFromFatLabel.AutoSize = true;
+            this.CaloriesFromFatLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CaloriesFromFatLabel.Location = new System.Drawing.Point(64, 142);
+            this.CaloriesFromFatLabel.Name = "CaloriesFromFatLabel";
+            this.CaloriesFromFatLabel.Size = new System.Drawing.Size(118, 18);
+            this.CaloriesFromFatLabel.TabIndex = 7;
+            this.CaloriesFromFatLabel.Text = "Calories from Fat:";
             // 
-            // label5
+            // CaloriesFromCarbsLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(49, 176);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 18);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Calories from Carbs:";
+            this.CaloriesFromCarbsLabel.AutoSize = true;
+            this.CaloriesFromCarbsLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CaloriesFromCarbsLabel.Location = new System.Drawing.Point(49, 176);
+            this.CaloriesFromCarbsLabel.Name = "CaloriesFromCarbsLabel";
+            this.CaloriesFromCarbsLabel.Size = new System.Drawing.Size(133, 18);
+            this.CaloriesFromCarbsLabel.TabIndex = 8;
+            this.CaloriesFromCarbsLabel.Text = "Calories from Carbs:";
             // 
             // ExitBtn
             // 
@@ -140,17 +140,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(388, 293);
             this.Controls.Add(this.ExitBtn);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.CaloriesFromCarbsLabel);
+            this.Controls.Add(this.CaloriesFromFatLabel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.CarbGramsLabel);
             this.Controls.Add(this.CarbGramLabel);
             this.Controls.Add(this.FatGramLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.FatGramsLabel);
             this.Controls.Add(this.CarbGramTextbox);
             this.Controls.Add(this.FatGramTextbox);
             this.Name = "Form1";
-            this.Text = "Calorie Cal";
+            this.Text = "Fat/Carb Grams To Calories";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,13 +160,13 @@
 
         private System.Windows.Forms.TextBox FatGramTextbox;
         private System.Windows.Forms.TextBox CarbGramTextbox;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label FatGramsLabel;
         private System.Windows.Forms.Label FatGramLabel;
         private System.Windows.Forms.Label CarbGramLabel;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label CarbGramsLabel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label CaloriesFromFatLabel;
+        private System.Windows.Forms.Label CaloriesFromCarbsLabel;
         private System.Windows.Forms.Button ExitBtn;
     }
 }

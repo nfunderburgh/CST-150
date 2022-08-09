@@ -47,13 +47,11 @@ namespace CST_150_Activity_7
         /************************************************************
          * This function turns grams of fat into Calories from Fat
          * @param - int FatGrams - Amount of Fat in grams
-         * 
-         * 
-         * 
-         * 
+         * @returns int - the amount of calories from fat
          ************************************************************/
         private int FatCalories(int FatGrams)
         {
+            //Turn grams of fat to calories of fat by multipying by 9
             int CaloriesFromFat = FatGrams * 9;
             return CaloriesFromFat;
         }
@@ -61,10 +59,11 @@ namespace CST_150_Activity_7
         /***********************************************************
         * This function turns grams of carbs into Calories from Carbs
         * @param - int CarbGrams - Amount of Carbs in grams
-        * @returns int
+        * @returns int - the amount of calories from carbs
         *********************************************************/
         private int CarbCalories(int CarbGrams)
         {
+            //Turn grams of carbs to calories of carbs by multipying by 4
             int CaloriesFromCarbs = CarbGrams * 4;
             return CaloriesFromCarbs;
         }
