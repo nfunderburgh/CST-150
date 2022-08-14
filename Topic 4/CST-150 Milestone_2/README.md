@@ -1,7 +1,6 @@
 # CST-150-Inventory
 By: Noah Funderburgh
 
-Loom URL: 
+Loom URL: https://www.loom.com/share/8752ac0a64d84170b605bcbe94cdba8a
 
-This is a inventory class that can add and remove items from the list of items in inventory as well
-as print the list of items and print how many different items are there are.
+This is a inventory class that can add, restock, remove, print the items and print how many different items are available in the arraylist.
