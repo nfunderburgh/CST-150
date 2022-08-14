@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CST_150_Activity_7
 {
-    public partial class Form1 : Form
+    public partial class CalorieConverter : Form
     {
-        public Form1()
+        public CalorieConverter()
         {
             InitializeComponent();
         }
@@ -46,8 +46,8 @@ namespace CST_150_Activity_7
         }
         /************************************************************
          * This function turns grams of fat into Calories from Fat
-         * @param - int FatGrams - Amount of Fat in grams
-         * @returns int - the amount of calories from fat
+         * @param amount of Fat in grams
+         * @returns the amount of calories from fat
          ************************************************************/
         private int FatCalories(int FatGrams)
         {
@@ -58,8 +58,8 @@ namespace CST_150_Activity_7
 
         /***********************************************************
         * This function turns grams of carbs into Calories from Carbs
-        * @param - int CarbGrams - Amount of Carbs in grams
-        * @returns int - the amount of calories from carbs
+        * @param amount of Carbs in grams
+        * @returns the amount of calories from carbs
         *********************************************************/
         private int CarbCalories(int CarbGrams)
         {

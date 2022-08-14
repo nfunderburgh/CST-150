@@ -1,6 +1,6 @@
 ﻿namespace CST_150_Activity_7
 {
-    partial class Form1
+    partial class CalorieConverter
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalorieConverter));
             this.FatGramTextbox = new System.Windows.Forms.TextBox();
             this.CarbGramTextbox = new System.Windows.Forms.TextBox();
             this.FatGramsLabel = new System.Windows.Forms.Label();
@@ -42,103 +43,66 @@
             // 
             // FatGramTextbox
             // 
-            this.FatGramTextbox.Location = new System.Drawing.Point(195, 71);
+            resources.ApplyResources(this.FatGramTextbox, "FatGramTextbox");
             this.FatGramTextbox.Name = "FatGramTextbox";
-            this.FatGramTextbox.Size = new System.Drawing.Size(100, 20);
-            this.FatGramTextbox.TabIndex = 0;
             this.FatGramTextbox.TextChanged += new System.EventHandler(this.FatGramTextbox_TextChanged);
             // 
             // CarbGramTextbox
             // 
-            this.CarbGramTextbox.Location = new System.Drawing.Point(195, 108);
+            resources.ApplyResources(this.CarbGramTextbox, "CarbGramTextbox");
             this.CarbGramTextbox.Name = "CarbGramTextbox";
-            this.CarbGramTextbox.Size = new System.Drawing.Size(100, 20);
-            this.CarbGramTextbox.TabIndex = 1;
             this.CarbGramTextbox.TextChanged += new System.EventHandler(this.CarbGramTextbox_TextChanged);
             // 
             // FatGramsLabel
             // 
-            this.FatGramsLabel.AutoSize = true;
-            this.FatGramsLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FatGramsLabel.Location = new System.Drawing.Point(115, 73);
+            resources.ApplyResources(this.FatGramsLabel, "FatGramsLabel");
             this.FatGramsLabel.Name = "FatGramsLabel";
-            this.FatGramsLabel.Size = new System.Drawing.Size(67, 18);
-            this.FatGramsLabel.TabIndex = 2;
-            this.FatGramsLabel.Text = "Fat grams";
             // 
             // FatGramLabel
             // 
-            this.FatGramLabel.AutoSize = true;
-            this.FatGramLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FatGramLabel.Location = new System.Drawing.Point(196, 142);
+            resources.ApplyResources(this.FatGramLabel, "FatGramLabel");
             this.FatGramLabel.Name = "FatGramLabel";
-            this.FatGramLabel.Size = new System.Drawing.Size(0, 18);
-            this.FatGramLabel.TabIndex = 3;
             // 
             // CarbGramLabel
             // 
-            this.CarbGramLabel.AutoSize = true;
-            this.CarbGramLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CarbGramLabel.Location = new System.Drawing.Point(196, 176);
+            resources.ApplyResources(this.CarbGramLabel, "CarbGramLabel");
             this.CarbGramLabel.Name = "CarbGramLabel";
-            this.CarbGramLabel.Size = new System.Drawing.Size(0, 18);
-            this.CarbGramLabel.TabIndex = 4;
             // 
             // CarbGramsLabel
             // 
-            this.CarbGramsLabel.AutoSize = true;
-            this.CarbGramsLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CarbGramsLabel.Location = new System.Drawing.Point(104, 108);
+            resources.ApplyResources(this.CarbGramsLabel, "CarbGramsLabel");
             this.CarbGramsLabel.Name = "CarbGramsLabel";
-            this.CarbGramsLabel.Size = new System.Drawing.Size(78, 18);
-            this.CarbGramsLabel.TabIndex = 5;
-            this.CarbGramsLabel.Text = "Carb Grams";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(58, 21);
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(287, 19);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Calories from Fat and Carbs Converter";
             // 
             // CaloriesFromFatLabel
             // 
-            this.CaloriesFromFatLabel.AutoSize = true;
-            this.CaloriesFromFatLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CaloriesFromFatLabel.Location = new System.Drawing.Point(64, 142);
+            resources.ApplyResources(this.CaloriesFromFatLabel, "CaloriesFromFatLabel");
             this.CaloriesFromFatLabel.Name = "CaloriesFromFatLabel";
-            this.CaloriesFromFatLabel.Size = new System.Drawing.Size(118, 18);
-            this.CaloriesFromFatLabel.TabIndex = 7;
-            this.CaloriesFromFatLabel.Text = "Calories from Fat:";
             // 
             // CaloriesFromCarbsLabel
             // 
-            this.CaloriesFromCarbsLabel.AutoSize = true;
-            this.CaloriesFromCarbsLabel.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CaloriesFromCarbsLabel.Location = new System.Drawing.Point(49, 176);
+            resources.ApplyResources(this.CaloriesFromCarbsLabel, "CaloriesFromCarbsLabel");
+            this.CaloriesFromCarbsLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.CaloriesFromCarbsLabel.Name = "CaloriesFromCarbsLabel";
-            this.CaloriesFromCarbsLabel.Size = new System.Drawing.Size(133, 18);
-            this.CaloriesFromCarbsLabel.TabIndex = 8;
-            this.CaloriesFromCarbsLabel.Text = "Calories from Carbs:";
             // 
             // ExitBtn
             // 
-            this.ExitBtn.Location = new System.Drawing.Point(151, 224);
+            resources.ApplyResources(this.ExitBtn, "ExitBtn");
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(75, 23);
-            this.ExitBtn.TabIndex = 9;
-            this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
-            // Form1
+            // CalorieConverter
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 293);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ControlBox = false;
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.CaloriesFromCarbsLabel);
             this.Controls.Add(this.CaloriesFromFatLabel);
@@ -149,8 +113,7 @@
             this.Controls.Add(this.FatGramsLabel);
             this.Controls.Add(this.CarbGramTextbox);
             this.Controls.Add(this.FatGramTextbox);
-            this.Name = "Form1";
-            this.Text = "Fat/Carb Grams To Calories";
+            this.Name = "CalorieConverter";
             this.ResumeLayout(false);
             this.PerformLayout();
 

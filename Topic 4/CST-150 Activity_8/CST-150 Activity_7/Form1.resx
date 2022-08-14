@@ -117,4 +117,297 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;CarbGramLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CarbGramTextbox.Name" xml:space="preserve">
+    <value>CarbGramTextbox</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 21</value>
+  </data>
+  <data name="FatGramsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 73</value>
+  </data>
+  <data name="&gt;&gt;CaloriesFromCarbsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CaloriesFromFatLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 18</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FatGramTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FatGramLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CarbGramsLabel.Name" xml:space="preserve">
+    <value>CarbGramsLabel</value>
+  </data>
+  <data name="&gt;&gt;CaloriesFromFatLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CaloriesFromCarbsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 176</value>
+  </data>
+  <data name="CarbGramsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;FatGramsLabel.Name" xml:space="preserve">
+    <value>FatGramsLabel</value>
+  </data>
+  <data name="CaloriesFromFatLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;FatGramLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FatGramLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="CarbGramsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CaloriesFromFatLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CarbGramLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CarbGramsLabel.Text" xml:space="preserve">
+    <value>Carb Grams</value>
+  </data>
+  <data name="&gt;&gt;CaloriesFromCarbsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CarbGramTextbox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 19</value>
+  </data>
+  <data name="CarbGramsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 18</value>
+  </data>
+  <data name="&gt;&gt;ExitBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CaloriesFromCarbsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="FatGramsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt</value>
+  </data>
+  <data name="FatGramLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 18</value>
+  </data>
+  <data name="CarbGramTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 108</value>
+  </data>
+  <data name="CaloriesFromCarbsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CaloriesFromCarbsLabel.Text" xml:space="preserve">
+    <value>Calories from Carbs:</value>
+  </data>
+  <data name="&gt;&gt;CarbGramsLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CarbGramLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 176</value>
+  </data>
+  <data name="FatGramLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="CaloriesFromFatLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CarbGramsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FatGramTextbox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Fat/Carb Grams To Calories</value>
+  </data>
+  <data name="FatGramLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CaloriesFromCarbsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;CaloriesFromCarbsLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CarbGramLabel.Name" xml:space="preserve">
+    <value>CarbGramLabel</value>
+  </data>
+  <data name="CarbGramTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;FatGramsLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ExitBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;FatGramsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CarbGramsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;CarbGramLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>388, 293</value>
+  </data>
+  <data name="&gt;&gt;CaloriesFromFatLabel.Name" xml:space="preserve">
+    <value>CaloriesFromFatLabel</value>
+  </data>
+  <data name="&gt;&gt;FatGramTextbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;ExitBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CarbGramTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CaloriesFromFatLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 142</value>
+  </data>
+  <data name="&gt;&gt;FatGramTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;CarbGramLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CaloriesFromFatLabel.Text" xml:space="preserve">
+    <value>Calories from Fat:</value>
+  </data>
+  <data name="ExitBtn.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="CaloriesFromFatLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="FatGramsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Calories from Fat and Carbs Converter</value>
+  </data>
+  <data name="FatGramTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>195, 71</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;FatGramsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FatGramLabel.Name" xml:space="preserve">
+    <value>FatGramLabel</value>
+  </data>
+  <data name="FatGramsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 18</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CalorieConverter</value>
+  </data>
+  <data name="&gt;&gt;CaloriesFromCarbsLabel.Name" xml:space="preserve">
+    <value>CaloriesFromCarbsLabel</value>
+  </data>
+  <data name="ExitBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;CarbGramsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CaloriesFromFatLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CarbGramLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="FatGramLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 142</value>
+  </data>
+  <data name="CarbGramsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 108</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CaloriesFromCarbsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 18</value>
+  </data>
+  <data name="&gt;&gt;ExitBtn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;FatGramTextbox.Name" xml:space="preserve">
+    <value>FatGramTextbox</value>
+  </data>
+  <data name="FatGramsLabel.Text" xml:space="preserve">
+    <value>Fat grams</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Cambria, 12pt, style=Bold</value>
+  </data>
+  <data name="FatGramsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="CarbGramLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt</value>
+  </data>
+  <data name="FatGramTextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;ExitBtn.Name" xml:space="preserve">
+    <value>ExitBtn</value>
+  </data>
+  <data name="CarbGramLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 18</value>
+  </data>
+  <data name="CarbGramTextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="ExitBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 224</value>
+  </data>
+  <data name="&gt;&gt;CarbGramTextbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="FatGramLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
 </root>
