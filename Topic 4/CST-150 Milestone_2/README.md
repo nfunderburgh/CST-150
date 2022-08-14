@@ -1,4 +1,4 @@
-# CST-150-Inventory
+# CST-150 Milestone 2
 By: Noah Funderburgh
 
 Loom URL: https://www.loom.com/share/8752ac0a64d84170b605bcbe94cdba8a
