@@ -1,0 +1,10 @@
+1. public void add(int a, int b) {}
+2. public double sumOfFiveNums(double num1, double num2, double num3, double num4, double num5) {}
+3. public int addTwoRandomInts(int randomNum1, int randomNum2) {}
+4. public int sumOfNumsDivisibleByThree(int num1, int num2, int num3) {}
+5. public void displayShorterString(string string1, string string2) {}
+6. public Array largestArray(Array array1, Array array2) {}
+7. public Array generateFiftyIntArray() {}
+8. public bool sameValue(bool bool1,bool bool2) {}
+9. public double doubleIntAddition(double double1, int integer1) {}
+10.public int averageOf2DArray(Array[][] Array1) {}
