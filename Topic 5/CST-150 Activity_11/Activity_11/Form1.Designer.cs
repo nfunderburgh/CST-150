@@ -1,6 +1,6 @@
 ﻿namespace Activity_11
 {
-    partial class Form1
+    partial class RollingDice
     {
         /// <summary>
         /// Required designer variable.

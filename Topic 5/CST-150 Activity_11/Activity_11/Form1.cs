@@ -10,25 +10,40 @@ using System.Windows.Forms;
 
 namespace Activity_11
 {
-    public partial class Form1 : Form
+    public partial class RollingDice : Form
     {
-        private int numSidesOnDice;
+        private int sidesCount;
         private int rollCounter = 0;
-        Random random = new Random();
+        private Random random;
 
-        public Form1()
+        public RollingDice()
         {
             InitializeComponent();
-
-            numSidesOnDice = random.Next(4, 20);
+            sidesCount = 7;
+            random = new Random();
             DiceNum1.SelectionAlignment = HorizontalAlignment.Center;
             DiceNum2.SelectionAlignment = HorizontalAlignment.Center;
+        }
+        public RollingDice(int sidesCount)
+        {
+            if (sidesCount <= 4 || sidesCount > 20)
+            {
+                this.sidesCount = 7;
+
+            }
+            else
+            {
+                this.sidesCount = sidesCount;
+            }
+            this.sidesCount++;
+            random = new Random();
         }
 
         private void RollDice_Click(object sender, EventArgs e)
         {
-            int dice1 = rollDie();
-            int dice2 = rollDie();
+            RollingDice dice = new RollingDice(10);
+            int dice1 = dice.rollDie();
+            int dice2 = dice.rollDie();
             DiceNum1.Text = dice1.ToString();
             DiceNum2.Text = dice2.ToString();
             rollCounter++;
@@ -44,8 +59,7 @@ namespace Activity_11
          ************************************************************/
         private int rollDie()
         {
-            int die = random.Next(1, numSidesOnDice);
-            return die;
+            return random.Next(1, sidesCount);
         }
     }
 }
