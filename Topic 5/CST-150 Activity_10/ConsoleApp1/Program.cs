@@ -83,9 +83,9 @@ namespace Activity_10
                 newSet.addElement(rhs.elements[i]); 
             }
             // Then adds elements from this. if needed into the set
-            for (int x = 0; x < this.elements.Count; x++)
+            for (int j = 0; j < this.elements.Count; j++)
             {
-                newSet.addElement(this.elements[x]);
+                newSet.addElement(this.elements[j]);
             }
             return newSet;
         }
