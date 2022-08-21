@@ -1,7 +1,7 @@
 # CST-150-Activity 9
 By: Noah Funderburgh
 
-Loom URL: 
+Loom URL: https://www.loom.com/share/7d3489ff9ac5438bab773caf9e6f4b66
 
 This is a program creates the union of two sets. I modified the union function as well as the contains element function.
 In the contain element function it had a unessecary else statement. In the union function it was putting the union set in
