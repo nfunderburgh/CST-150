@@ -1,0 +1,15 @@
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\bin\Debug\net6.0\Activity_12.exe
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\bin\Debug\net6.0\Activity_12.deps.json
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\bin\Debug\net6.0\Activity_12.runtimeconfig.json
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\bin\Debug\net6.0\Activity_12.dll
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\bin\Debug\net6.0\Activity_12.pdb
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\Activity_12.csproj.AssemblyReference.cache
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\Activity_12.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\Activity_12.AssemblyInfoInputs.cache
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\Activity_12.AssemblyInfo.cs
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\Activity_12.csproj.CoreCompileInputs.cache
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\Activity_12.dll
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\refint\Activity_12.dll
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\Activity_12.pdb
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\Activity_12.genruntimeconfig.cache
+D:\Github\CST-150\Topic 6\CST-150 Activity_12\Activity_12\Activity_12\obj\Debug\net6.0\ref\Activity_12.dll
