@@ -14,8 +14,9 @@ class Program
             {
                 if (Char.ToLower(line[i]) == 'e' || Char.ToLower(line[i]) == 't')
                 {
-                    // If we reach here and an exception occurs then we are at the end of the string meaning the last
-                    // word has a E or T at the end of word
+                    // If we reach here and an exception occurs this means we have reached the end of the string
+                    // Therefore we can conclude since the last letter was E or T and its the end of the string the word 
+                    // must in a E or T
                     try
                     {
                         if (Char.ToLower(line[i +1]) == ' ')
