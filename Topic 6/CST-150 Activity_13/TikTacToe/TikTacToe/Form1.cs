@@ -15,8 +15,8 @@ namespace TikTacToe
         int[,] tictactoe = { { 2, 3, 4 },
                              { 5, 6, 7},
                              { 8, 9, 10 } };
-        int turn = 0;
-        bool win = false;
+        int turnCounter = 0;
+        bool winner = false;
         public Form1()
         {
             InitializeComponent();
@@ -38,42 +38,83 @@ namespace TikTacToe
             g.DrawLine(myPen, 300, 400, 300, 100);
         }
 
-        private void test(object sender, int x , int y)
+        private void Main(object sender, int x , int y)
         {
-            Console.WriteLine(turn);
             string whoseTurn = " ";
-            if (turn % 2 == 0)
+            //The text inside the butt is blank place hasn't been picked yet
+            // If it isn't blank then we can't let the player pick that spot because its already picked
+            if (tictactoe[x,y] != 1 && tictactoe[x, y] != 0)
             {
-                whoseTurn = "Player 2";
-                turnLabel.Text = whoseTurn + " Turn!";
-                ((Button)sender).Text = "X";
-                tictactoe[x, y] = 1;
-
-            }
-            else
-            {
-                whoseTurn = "Player 1";
-                turnLabel.Text = whoseTurn + " Turn!";
-                ((Button)sender).Text = "O";
-                tictactoe[x, y] = 0;
-            }   
-            turn++;
-            win = winConditions();
-            if (win)
-            {
-                if(turn % 2 == 0)
+                if (turnCounter % 2 == 0)
                 {
-                    MessageBox.Show("Player 2 Winner");
+                    whoseTurn = "Player 2";
+                    turnLabel.Text = whoseTurn + " Turn!";
+                    ((Button)sender).Text = "X";
+                    tictactoe[x, y] = 1;
                 }
                 else
                 {
-                    MessageBox.Show("Player 1 Winner");
+                    whoseTurn = "Player 1";
+                    turnLabel.Text = whoseTurn + " Turn!";
+                    ((Button)sender).Text = "O";
+                    tictactoe[x, y] = 0;
+                }
+                turnCounter++;
+                winner = winConditions();
+                if (winner)
+                {
+                    if (turnCounter % 2 == 0)
+                    {
+                        turnLabel.Text = "Player 2 Winner";
+                        MessageBox.Show("Player 2 Winner");
+                        reset();
+                    }
+                    else
+                    {
+                        turnLabel.Text = "Player 1 Winner";
+                        MessageBox.Show("Player 1 Winner");
+                        reset();
+                    }
+                }
+                // if we reach 9 and there is no winner then its a tie game
+                if (turnCounter == 9 && winner != true)
+                {
+                    MessageBox.Show("Tie Game");
+                    reset();
                 }
             }
+            else
+            {
+                MessageBox.Show("Pick a different place!");
+            }
+        }
+        private void reset()
+        {
+            turnCounter = 0;
+            winner = false;
+            int counter = 1;
+            for( int i = 0; i <= 2; i++)
+            {
+                for(int j = 0; j <= 2; j++)
+                {
+                    counter++;
+                    tictactoe[i, j] = counter;
+                }
+            }
+            button1.Text = "";
+            button2.Text = "";
+            button3.Text = "";
+            button4.Text = "";
+            button5.Text = "";
+            button6.Text = "";
+            button7.Text = "";
+            button8.Text = "";
+            button9.Text = "";
+            turnLabel.Text = "Select a square";
         }
 
         private bool winConditions()
-        {
+        {   
             //Winning condition for first horizontal row
             if (tictactoe[0,0] == tictactoe[0,1] && tictactoe[0,1] == tictactoe[0, 2])
             {
@@ -104,7 +145,7 @@ namespace TikTacToe
             {
                 return true;
             }
-            //Diagonal winning condition
+            //Diagonal winning conditions
             else if (tictactoe[0, 0] == tictactoe[1, 1] && tictactoe[1, 1] == tictactoe[2, 2])
             {
                 return true;
@@ -123,47 +164,49 @@ namespace TikTacToe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            test(sender,0,0);
+
+            Main(sender,0,0);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            test(sender,0,1);
+            Main(sender,0,1);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            test(sender,0,2);
+            Main(sender,0,2);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            test(sender,1,0);
+            Main(sender,1,0);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            test(sender,1,1);
+            Main(sender,1,1);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            test(sender,1,2);
+            Main(sender,1,2);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            test(sender,2,0);
+            Main(sender,2,0);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            test(sender,2,1);
+            Main(sender,2,1);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            test(sender,2,2);
+            Main(sender,2,2);
         }
     }
 }
