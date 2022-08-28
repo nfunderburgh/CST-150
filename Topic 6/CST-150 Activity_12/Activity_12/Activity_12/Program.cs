@@ -19,7 +19,7 @@ class Program
                     // must in a E or T
                     try
                     {
-                        if (Char.ToLower(line[i +1]) == ' ')
+                        if (Char.ToLower(line[i +1]) == ' ' || Char.ToLower(line[i + 1]) == '.')
                         {
                             Count++;
                         }

@@ -41,7 +41,7 @@ namespace TikTacToe
         private void Main(object sender, int x , int y)
         {
             string whoseTurn = " ";
-            //The text inside the butt is blank place hasn't been picked yet
+            //The text inside the button is blank, place hasn't been picked yet
             // If it isn't blank then we can't let the player pick that spot because its already picked
             if (tictactoe[x,y] != 1 && tictactoe[x, y] != 0)
             {

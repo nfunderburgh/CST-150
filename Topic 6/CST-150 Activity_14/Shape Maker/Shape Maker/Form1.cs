@@ -22,25 +22,9 @@ namespace Shape_Maker
 
         private void drawButton_Click(object sender, EventArgs e)
         {
-            //Date
-            if (dateCheckBox.Checked)
-            {
-                DateTime thisDay = DateTime.Today;
-                dateLabel.Text = thisDay.ToString("d");
-            }
-            else
-            {
-                dateLabel.Text = "";
-            }
-            //Name
-            if (nameCheckBox.Checked)
-            {
-                nameLabel.Text = listBox1.SelectedItem.ToString();
-            }
-            else
-            {
-                nameLabel.Text = "";
-            }
+           
+            dateCheckBox_CheckedChanged(sender, e);
+            nameCheckBox_CheckedChanged(sender, e);
             this.Refresh();
         }
 
