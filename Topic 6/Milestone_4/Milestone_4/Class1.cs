@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
+using System;
 
-namespace Milestone_4
+namespace Milestone_3
 
 {
     public class Items
     {
-        //getting products name
         private string productsName;
         public string ProductName
         {
@@ -22,11 +22,11 @@ namespace Milestone_4
         }
 
         //getting amount in stock
-        private int stock;
-        public int Stock
+        private int productStock;
+        public int ProductStock
         {
-            get { return stock; }
-            set { stock = value; }
+            get { return productStock; }
+            set { productStock = value; }
         }
 
         //getting product number
@@ -41,30 +41,26 @@ namespace Milestone_4
         {
             this.ProductName = productsName;
             this.ProductPrice = productPrice;
-            this.Stock = stock;
+            this.ProductStock = stock;
             this.productNumber = ProductNumber;
         }
 
-        public Items(int stock)
-        {
-            this.stock = stock;
-        }
-
-
-        //Editing any item 
+        //Changes product name
         public void changeproductName(string newName)
         {
-            ProductName = productsName;
+            productsName = newName;
         }
+        //Changes product price
         public void changeproductPrice(double newProductPrice)
         {
-            ProductPrice = productPrice;
+            productPrice = newProductPrice;
         }
+        //Changes product stock
         public void changeStock(int newStock)
         {
-            Stock = stock;
-        }
+            productStock = newStock;
 
+        }
     }
 
     //checking for inventory
@@ -72,44 +68,25 @@ namespace Milestone_4
     {
         public List<Items> Items = new List<Items>();
 
-        //send user to add page to add another item
+        //add item to list
         public void addItems(Items item)
         {
             this.Items.Add(item);
         }
 
-
-
         //removes items 
-        public void removeItems(int index)
-        {
-            this.Items.RemoveAt(index);
-        }
-
-        //allows user to restock 
-        public void restockItem(Items items, int stock)
-        {
-
-            if (items.Stock == 0)
+        public void removeItems(string id)
+        {   int i = 0;
+            int index = 0;
+            foreach(Items item in this.Items)
             {
-                items.changeStock(stock);
-            }
-
-        }
-
-        // find book by book name, and gerne
-        public Items findProduct(string productName, int productNumber)
-        {
-            Items res = null;
-            foreach (Items items in this.Items)
-            {
-                if (items.ProductName == productName && items.productNumber == productNumber)
+                if (item.productNumber.ToString() == id)
                 {
-                    res = items; break;
+                    index = i;
                 }
-
+                i++;
             }
-            return res;
+            this.Items.RemoveAt(index);
         }
     }
 }

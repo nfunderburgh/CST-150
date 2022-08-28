@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
-namespace Milestone_4
+namespace Milestone_3
 {
     public partial class LoginScreen : MaterialForm
     {
@@ -29,7 +29,7 @@ namespace Milestone_4
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            if(usernameTextbox.Text == "admin" && passwordTextbox.Text == "123")
+            if(usernameTextbox.Text == "user" && passwordTextbox.Text == "123")
             {
                 this.Hide();
                 form2.Show();

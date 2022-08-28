@@ -1,4 +1,4 @@
-﻿namespace Milestone_4
+﻿namespace Milestone_3
 {
     partial class Form2
     {
@@ -31,7 +31,6 @@
             this.addNewButton = new MaterialSkin.Controls.MaterialButton();
             this.updateButton = new MaterialSkin.Controls.MaterialButton();
             this.resetButton = new MaterialSkin.Controls.MaterialButton();
-            this.printButton = new MaterialSkin.Controls.MaterialButton();
             this.deleteButton = new MaterialSkin.Controls.MaterialButton();
             this.exitButton = new MaterialSkin.Controls.MaterialButton();
             this.itemManagerLabel = new MaterialSkin.Controls.MaterialLabel();
@@ -43,11 +42,11 @@
             this.itemNameTextbox = new MaterialSkin.Controls.MaterialTextBox();
             this.itemPriceTextbox = new MaterialSkin.Controls.MaterialTextBox();
             this.itemStockTextbox = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
-            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ProductName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listView = new System.Windows.Forms.ListView();
+            this.IDs = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // addNewButton
@@ -58,7 +57,7 @@
             this.addNewButton.Depth = 0;
             this.addNewButton.HighEmphasis = true;
             this.addNewButton.Icon = null;
-            this.addNewButton.Location = new System.Drawing.Point(16, 81);
+            this.addNewButton.Location = new System.Drawing.Point(44, 81);
             this.addNewButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.addNewButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.addNewButton.Name = "addNewButton";
@@ -79,7 +78,7 @@
             this.updateButton.Depth = 0;
             this.updateButton.HighEmphasis = true;
             this.updateButton.Icon = null;
-            this.updateButton.Location = new System.Drawing.Point(16, 132);
+            this.updateButton.Location = new System.Drawing.Point(44, 132);
             this.updateButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.updateButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.updateButton.Name = "updateButton";
@@ -90,6 +89,7 @@
             this.updateButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.updateButton.UseAccentColor = false;
             this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // resetButton
             // 
@@ -99,7 +99,7 @@
             this.resetButton.Depth = 0;
             this.resetButton.HighEmphasis = true;
             this.resetButton.Icon = null;
-            this.resetButton.Location = new System.Drawing.Point(16, 183);
+            this.resetButton.Location = new System.Drawing.Point(44, 183);
             this.resetButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.resetButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.resetButton.Name = "resetButton";
@@ -112,26 +112,6 @@
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
-            // printButton
-            // 
-            this.printButton.AutoSize = false;
-            this.printButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.printButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.printButton.Depth = 0;
-            this.printButton.HighEmphasis = true;
-            this.printButton.Icon = null;
-            this.printButton.Location = new System.Drawing.Point(16, 234);
-            this.printButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.printButton.MouseState = MaterialSkin.MouseState.HOVER;
-            this.printButton.Name = "printButton";
-            this.printButton.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.printButton.Size = new System.Drawing.Size(139, 39);
-            this.printButton.TabIndex = 3;
-            this.printButton.Text = "Print";
-            this.printButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.printButton.UseAccentColor = false;
-            this.printButton.UseVisualStyleBackColor = true;
-            // 
             // deleteButton
             // 
             this.deleteButton.AutoSize = false;
@@ -140,7 +120,7 @@
             this.deleteButton.Depth = 0;
             this.deleteButton.HighEmphasis = true;
             this.deleteButton.Icon = null;
-            this.deleteButton.Location = new System.Drawing.Point(16, 285);
+            this.deleteButton.Location = new System.Drawing.Point(44, 234);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.deleteButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.deleteButton.Name = "deleteButton";
@@ -161,7 +141,7 @@
             this.exitButton.Depth = 0;
             this.exitButton.HighEmphasis = true;
             this.exitButton.Icon = null;
-            this.exitButton.Location = new System.Drawing.Point(16, 336);
+            this.exitButton.Location = new System.Drawing.Point(44, 285);
             this.exitButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.exitButton.MouseState = MaterialSkin.MouseState.HOVER;
             this.exitButton.Name = "exitButton";
@@ -193,7 +173,7 @@
             this.itemIDLabel.Depth = 0;
             this.itemIDLabel.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.itemIDLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.itemIDLabel.Location = new System.Drawing.Point(213, 183);
+            this.itemIDLabel.Location = new System.Drawing.Point(215, 142);
             this.itemIDLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.itemIDLabel.Name = "itemIDLabel";
             this.itemIDLabel.Size = new System.Drawing.Size(85, 29);
@@ -206,7 +186,7 @@
             this.itemNameLabel.Depth = 0;
             this.itemNameLabel.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.itemNameLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.itemNameLabel.Location = new System.Drawing.Point(213, 234);
+            this.itemNameLabel.Location = new System.Drawing.Point(215, 193);
             this.itemNameLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.itemNameLabel.Name = "itemNameLabel";
             this.itemNameLabel.Size = new System.Drawing.Size(126, 29);
@@ -219,7 +199,7 @@
             this.itemPriceLabel.Depth = 0;
             this.itemPriceLabel.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.itemPriceLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.itemPriceLabel.Location = new System.Drawing.Point(213, 285);
+            this.itemPriceLabel.Location = new System.Drawing.Point(215, 244);
             this.itemPriceLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.itemPriceLabel.Name = "itemPriceLabel";
             this.itemPriceLabel.Size = new System.Drawing.Size(111, 29);
@@ -232,7 +212,7 @@
             this.itemStockLabel.Depth = 0;
             this.itemStockLabel.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.itemStockLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.itemStockLabel.Location = new System.Drawing.Point(213, 336);
+            this.itemStockLabel.Location = new System.Drawing.Point(215, 295);
             this.itemStockLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.itemStockLabel.Name = "itemStockLabel";
             this.itemStockLabel.Size = new System.Drawing.Size(123, 29);
@@ -247,7 +227,7 @@
             this.itemIDTextbox.Depth = 0;
             this.itemIDTextbox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.itemIDTextbox.LeadingIcon = null;
-            this.itemIDTextbox.Location = new System.Drawing.Point(399, 183);
+            this.itemIDTextbox.Location = new System.Drawing.Point(401, 142);
             this.itemIDTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.itemIDTextbox.MaxLength = 50;
             this.itemIDTextbox.MouseState = MaterialSkin.MouseState.OUT;
@@ -265,9 +245,9 @@
             this.itemNameTextbox.AnimateReadOnly = false;
             this.itemNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.itemNameTextbox.Depth = 0;
-            this.itemNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.itemNameTextbox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.itemNameTextbox.LeadingIcon = null;
-            this.itemNameTextbox.Location = new System.Drawing.Point(399, 234);
+            this.itemNameTextbox.Location = new System.Drawing.Point(401, 193);
             this.itemNameTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.itemNameTextbox.MaxLength = 50;
             this.itemNameTextbox.MouseState = MaterialSkin.MouseState.OUT;
@@ -285,9 +265,9 @@
             this.itemPriceTextbox.AnimateReadOnly = false;
             this.itemPriceTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.itemPriceTextbox.Depth = 0;
-            this.itemPriceTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.itemPriceTextbox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.itemPriceTextbox.LeadingIcon = null;
-            this.itemPriceTextbox.Location = new System.Drawing.Point(399, 285);
+            this.itemPriceTextbox.Location = new System.Drawing.Point(401, 244);
             this.itemPriceTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.itemPriceTextbox.MaxLength = 50;
             this.itemPriceTextbox.MouseState = MaterialSkin.MouseState.OUT;
@@ -305,9 +285,9 @@
             this.itemStockTextbox.AnimateReadOnly = false;
             this.itemStockTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.itemStockTextbox.Depth = 0;
-            this.itemStockTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.itemStockTextbox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.itemStockTextbox.LeadingIcon = null;
-            this.itemStockTextbox.Location = new System.Drawing.Point(399, 336);
+            this.itemStockTextbox.Location = new System.Drawing.Point(401, 295);
             this.itemStockTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.itemStockTextbox.MaxLength = 50;
             this.itemStockTextbox.MouseState = MaterialSkin.MouseState.OUT;
@@ -319,56 +299,54 @@
             this.itemStockTextbox.TrailingIcon = null;
             this.itemStockTextbox.UseTallSize = false;
             // 
-            // materialListView1
+            // listView
             // 
-            this.materialListView1.AutoSizeTable = false;
-            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ID,
-            this.ProductName,
-            this.Price,
-            this.columnHeader4});
-            this.materialListView1.Depth = 0;
-            this.materialListView1.FullRowSelect = true;
-            this.materialListView1.HideSelection = false;
-            this.materialListView1.Location = new System.Drawing.Point(34, 419);
-            this.materialListView1.MinimumSize = new System.Drawing.Size(200, 100);
-            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialListView1.Name = "materialListView1";
-            this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(504, 180);
-            this.materialListView1.TabIndex = 15;
-            this.materialListView1.UseCompatibleStateImageBehavior = false;
-            this.materialListView1.View = System.Windows.Forms.View.Details;
+            this.listView.BackColor = System.Drawing.Color.White;
+            this.listView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.IDs,
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listView.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.listView.FullRowSelect = true;
+            this.listView.GridLines = true;
+            this.listView.HideSelection = false;
+            this.listView.Location = new System.Drawing.Point(44, 423);
+            this.listView.MultiSelect = false;
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(544, 177);
+            this.listView.TabIndex = 16;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
+            this.listView.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
             // 
-            // ID
+            // IDs
             // 
-            this.ID.Text = "ID";
-            this.ID.Width = 90;
+            this.IDs.Text = "ID";
+            this.IDs.Width = 130;
             // 
-            // ProductName
+            // columnHeader1
             // 
-            this.ProductName.Text = "Name";
-            this.ProductName.Width = 160;
+            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Width = 160;
             // 
-            // Price
+            // columnHeader2
             // 
-            this.Price.Text = "Price";
-            this.Price.Width = 90;
+            this.columnHeader2.Text = "Price";
+            this.columnHeader2.Width = 105;
             // 
-            // columnHeader4
+            // columnHeader3
             // 
-            this.columnHeader4.Text = "Stock";
-            this.columnHeader4.Width = 90;
+            this.columnHeader3.Text = "Stock";
+            this.columnHeader3.Width = 90;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 673);
-            this.Controls.Add(this.materialListView1);
+            this.Controls.Add(this.listView);
             this.Controls.Add(this.itemStockTextbox);
             this.Controls.Add(this.itemPriceTextbox);
             this.Controls.Add(this.itemNameTextbox);
@@ -380,12 +358,11 @@
             this.Controls.Add(this.itemManagerLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.deleteButton);
-            this.Controls.Add(this.printButton);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.addNewButton);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Inventory";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,7 +373,6 @@
         private MaterialSkin.Controls.MaterialButton addNewButton;
         private MaterialSkin.Controls.MaterialButton updateButton;
         private MaterialSkin.Controls.MaterialButton resetButton;
-        private MaterialSkin.Controls.MaterialButton printButton;
         private MaterialSkin.Controls.MaterialButton deleteButton;
         private MaterialSkin.Controls.MaterialButton exitButton;
         private MaterialSkin.Controls.MaterialLabel itemManagerLabel;
@@ -408,10 +384,10 @@
         private MaterialSkin.Controls.MaterialTextBox itemNameTextbox;
         private MaterialSkin.Controls.MaterialTextBox itemPriceTextbox;
         private MaterialSkin.Controls.MaterialTextBox itemStockTextbox;
-        private MaterialSkin.Controls.MaterialListView materialListView1;
-        private System.Windows.Forms.ColumnHeader ID;
-        private System.Windows.Forms.ColumnHeader ProductName;
-        private System.Windows.Forms.ColumnHeader Price;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.ColumnHeader IDs;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }

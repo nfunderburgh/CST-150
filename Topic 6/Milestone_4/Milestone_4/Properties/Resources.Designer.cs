@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Milestone_4.Properties
+namespace Milestone_3.Properties
 {
 
 
