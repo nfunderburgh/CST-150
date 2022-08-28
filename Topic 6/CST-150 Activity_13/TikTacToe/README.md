@@ -1,4 +1,4 @@
-# CST-150-Activity 13
+# CST-150-Activity 13 Tic Tac Toe
 By: Noah Funderburgh
 
 Loom URL: https://www.loom.com/share/d98704d0eaa64e658341ddf2a7bbf9b8
