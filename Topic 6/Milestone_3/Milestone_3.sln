@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milestone_3", "Milestone_4\Milestone_3.csproj", "{79F82EDE-787E-47DA-923C-BE8ECB7BFBF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milestone_3", "Milestone_3\Milestone_3.csproj", "{B33A5350-72ED-4DF9-94E9-65CF2C1DF86D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79F82EDE-787E-47DA-923C-BE8ECB7BFBF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79F82EDE-787E-47DA-923C-BE8ECB7BFBF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79F82EDE-787E-47DA-923C-BE8ECB7BFBF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79F82EDE-787E-47DA-923C-BE8ECB7BFBF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B33A5350-72ED-4DF9-94E9-65CF2C1DF86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33A5350-72ED-4DF9-94E9-65CF2C1DF86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33A5350-72ED-4DF9-94E9-65CF2C1DF86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33A5350-72ED-4DF9-94E9-65CF2C1DF86D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {81EBD12A-7BE4-49CC-BDFB-05B2FD941924}
+		SolutionGuid = {16794804-B70C-4C66-B468-78514886F811}
 	EndGlobalSection
 EndGlobal
