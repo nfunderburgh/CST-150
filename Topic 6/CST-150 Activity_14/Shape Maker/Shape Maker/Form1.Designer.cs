@@ -199,7 +199,7 @@
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.shapeLabel);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Shape Maker";
             this.fillGroupBox.ResumeLayout(false);
             this.fillGroupBox.PerformLayout();
             this.groupBox2.ResumeLayout(false);
