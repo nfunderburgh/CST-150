@@ -17,6 +17,7 @@ namespace Activity_15
             InitializeComponent();
             Random rand = new Random(total);
             int lucky = rand.Next(1, 50);
+           this.Text = " Your lucky number is " + lucky;
             luckyNumFinalLabel.Text = " Your lucky number is " + lucky;
         }
     }

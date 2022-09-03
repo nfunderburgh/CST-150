@@ -53,7 +53,6 @@
             this.ClientSize = new System.Drawing.Size(381, 367);
             this.Controls.Add(this.luckyNumFinalLabel);
             this.Name = "Form2";
-            this.Text = "Lucky Numbers";
             this.ResumeLayout(false);
             this.PerformLayout();
 
