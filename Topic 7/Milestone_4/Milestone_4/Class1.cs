@@ -98,7 +98,7 @@ namespace Milestone_3
             Console.WriteLine("---------------------");
         }
 
-        public Items findProduct(double productNumber)
+        public Items findProduct(int productNumber)
         {
             Items item = null;
             foreach (Items items in this.Items)

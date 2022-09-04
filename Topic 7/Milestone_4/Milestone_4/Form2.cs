@@ -108,7 +108,7 @@ namespace Milestone_3
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            item2 = wh.findProduct(double.Parse(itemIDTextbox.Text));
+            item2 = wh.findProduct(int.Parse(itemIDTextbox.Text));
 
             bool found = false;
             for (int i = 0; i < listView.Items.Count; i++)
@@ -141,7 +141,7 @@ namespace Milestone_3
         {
             foreach (ListViewItem eachItem in listView.SelectedItems)
             {
-                item2 = wh.findProduct(double.Parse(eachItem.Text));
+                item2 = wh.findProduct(int.Parse(eachItem.Text));
                 itemIDTextbox.Text = item2.productNumber.ToString();
                 itemNameTextbox.Text = item2.ProductName;
                 itemPriceTextbox.Text = item2.ProductPrice.ToString();
@@ -162,7 +162,7 @@ namespace Milestone_3
             {
                 try
                 {
-                    item2 = wh.findProduct(double.Parse(searchTextbox.Text));
+                    item2 = wh.findProduct(int.Parse(searchTextbox.Text));
                 }
                 catch
                 {
