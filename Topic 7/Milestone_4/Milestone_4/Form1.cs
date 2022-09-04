@@ -19,7 +19,7 @@ namespace Milestone_3
         {
             InitializeComponent();
 
-            form2 = new Form2(this);
+            form2 = new Form2();
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.EnforceBackcolorOnAllComponents = true;
             materialSkinManager.AddFormToManage(this);

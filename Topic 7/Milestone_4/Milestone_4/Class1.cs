@@ -30,14 +30,14 @@ namespace Milestone_3
         }
 
         //getting product number
-        private double ProductNumber;
-        public double productNumber
+        private int ProductNumber;
+        public int productNumber
         {
             get { return ProductNumber; }
             set { ProductNumber = value; }
         }
 
-        public Items(string productsName, double productPrice, int stock, double ProductNumber)
+        public Items(string productsName, double productPrice, int stock, int ProductNumber)
         {
             this.ProductName = productsName;
             this.ProductPrice = productPrice;
@@ -95,6 +95,7 @@ namespace Milestone_3
             {
                 Console.WriteLine("Product ID: " + item.productNumber + " Product Name: " + item.ProductName + " Product Price: " + item.ProductPrice + " Product Stock: " + item.ProductStock);
             }
+            Console.WriteLine("---------------------");
         }
 
         public Items findProduct(double productNumber)
@@ -106,7 +107,18 @@ namespace Milestone_3
                 {
                     item = items;
                 }
-
+            }
+            return item;
+        }
+        public Items findProduct(string productName)
+        {
+            Items item = null;
+            foreach (Items items in this.Items)
+            {
+                if (items.ProductName == productName)
+                {
+                    item = items;
+                }
             }
             return item;
         }

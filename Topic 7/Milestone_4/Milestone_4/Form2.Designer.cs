@@ -47,6 +47,12 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.searchTextbox = new MaterialSkin.Controls.MaterialTextBox();
+            this.listViewCopy = new System.Windows.Forms.ListView();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // addNewButton
@@ -319,7 +325,6 @@
             this.listView.TabIndex = 16;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
-            this.listView.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
             this.listView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView_MouseDoubleClick);
             // 
             // IDs
@@ -342,11 +347,76 @@
             this.columnHeader3.Text = "Stock";
             this.columnHeader3.Width = 90;
             // 
+            // searchTextbox
+            // 
+            this.searchTextbox.AcceptsTab = true;
+            this.searchTextbox.AnimateReadOnly = false;
+            this.searchTextbox.BackColor = System.Drawing.SystemColors.Window;
+            this.searchTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchTextbox.Depth = 0;
+            this.searchTextbox.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.searchTextbox.Hint = "Search...";
+            this.searchTextbox.LeadingIcon = null;
+            this.searchTextbox.Location = new System.Drawing.Point(44, 372);
+            this.searchTextbox.Margin = new System.Windows.Forms.Padding(2);
+            this.searchTextbox.MaxLength = 50;
+            this.searchTextbox.MouseState = MaterialSkin.MouseState.OUT;
+            this.searchTextbox.Multiline = false;
+            this.searchTextbox.Name = "searchTextbox";
+            this.searchTextbox.Size = new System.Drawing.Size(201, 36);
+            this.searchTextbox.TabIndex = 17;
+            this.searchTextbox.Text = "";
+            this.searchTextbox.TrailingIcon = null;
+            this.searchTextbox.UseTallSize = false;
+            this.searchTextbox.TextChanged += new System.EventHandler(this.searchTextbox_TextChanged);
+            // 
+            // listViewCopy
+            // 
+            this.listViewCopy.BackColor = System.Drawing.Color.White;
+            this.listViewCopy.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listViewCopy.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7});
+            this.listViewCopy.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.listViewCopy.FullRowSelect = true;
+            this.listViewCopy.GridLines = true;
+            this.listViewCopy.HideSelection = false;
+            this.listViewCopy.Location = new System.Drawing.Point(44, 423);
+            this.listViewCopy.MultiSelect = false;
+            this.listViewCopy.Name = "listViewCopy";
+            this.listViewCopy.Size = new System.Drawing.Size(544, 177);
+            this.listViewCopy.TabIndex = 18;
+            this.listViewCopy.UseCompatibleStateImageBehavior = false;
+            this.listViewCopy.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "ID";
+            this.columnHeader4.Width = 130;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Name";
+            this.columnHeader5.Width = 160;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Price";
+            this.columnHeader6.Width = 105;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Stock";
+            this.columnHeader7.Width = 90;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 673);
+            this.Controls.Add(this.searchTextbox);
             this.Controls.Add(this.listView);
             this.Controls.Add(this.itemStockTextbox);
             this.Controls.Add(this.itemPriceTextbox);
@@ -362,6 +432,7 @@
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.addNewButton);
+            this.Controls.Add(this.listViewCopy);
             this.Name = "Form2";
             this.Text = "Inventory";
             this.ResumeLayout(false);
@@ -390,5 +461,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private MaterialSkin.Controls.MaterialTextBox searchTextbox;
+        private System.Windows.Forms.ListView listViewCopy;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }

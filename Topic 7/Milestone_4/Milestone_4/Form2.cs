@@ -14,25 +14,23 @@ namespace Milestone_3
 {
     public partial class Form2 : MaterialForm
     {
-        LoginScreen loginscreen;
         Items item1;
         Items item2;
-        ListViewItem lvi;
+        ListViewItem lvi1;
+        ListViewItem lvi2;
         Warehouse wh;
 
-        private ListViewColumnSorter lvwColumnSorter;
-        public Form2(LoginScreen ls)
+        public Form2()
         {
             InitializeComponent();
-            loginscreen = ls;
             var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.EnforceBackcolorOnAllComponents = true;
             materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue900, Primary.Blue800, Primary.BlueGrey500, Accent.LightBlue700, TextShade.WHITE);
             listView.GridLines = true;
-
-            lvwColumnSorter = new ListViewColumnSorter();
+            listViewCopy.GridLines = true;
             wh = new Warehouse();
-
-            this.listView.ListViewItemSorter = lvwColumnSorter;
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -47,6 +45,7 @@ namespace Milestone_3
                 listView.Items.Remove(eachItem);
                 wh.removeItems(eachItem.Text);
                 wh.printArray();
+
             }
         }
 
@@ -76,12 +75,15 @@ namespace Milestone_3
                 }
                 else
                 {
-                    double productNumber = double.Parse(itemIDTextbox.Text);
+                    int productNumber = int.Parse(itemIDTextbox.Text);
                     string productsName = itemNameTextbox.Text;
                     double productPrice = double.Parse(itemPriceTextbox.Text);
                     int productStock = int.Parse(itemStockTextbox.Text);
+                   
+
                     item1 = new Items(productsName, productPrice, productStock, productNumber);
                     wh.addItems(item1);
+                   
                     addItemsToListView();
                     listView.BackColor = System.Drawing.Color.White;
                 }
@@ -95,27 +97,29 @@ namespace Milestone_3
 
         private void addItemsToListView()
         {
-            lvi = new ListViewItem(item1.productNumber.ToString());
-            lvi.SubItems.Add(item1.ProductName);
-            lvi.SubItems.Add(item1.ProductPrice.ToString());
-            lvi.SubItems.Add(item1.ProductStock.ToString());
-            lvi.BackColor = Color.White;
-            listView.Items.Add(lvi);
+            lvi1 = new ListViewItem(item1.productNumber.ToString());
+            lvi1.SubItems.Add(item1.ProductName);
+            lvi1.SubItems.Add(item1.ProductPrice.ToString());
+            lvi1.SubItems.Add(item1.ProductStock.ToString());
+            lvi1.BackColor = Color.White;
+            listView.Items.Add(lvi1);
 
         }
 
         private void updateButton_Click(object sender, EventArgs e)
         {
+            item2 = wh.findProduct(double.Parse(itemIDTextbox.Text));
+
             bool found = false;
             for (int i = 0; i < listView.Items.Count; i++)
             {
                 if(listView.Items[i].SubItems[0].Text == itemIDTextbox.Text)
                 {
-                    item1.changeproductName(itemNameTextbox.Text);
-                    item1.changeproductPrice(double.Parse(itemPriceTextbox.Text));
-                    item1.changeStock(int.Parse(itemStockTextbox.Text));
+                    item2.changeproductName(itemNameTextbox.Text);
+                    item2.changeproductPrice(double.Parse(itemPriceTextbox.Text));
+                    item2.changeStock(int.Parse(itemStockTextbox.Text));
                     found = true;
-                    updateList(i);
+                    updateList(i,item2);
                 }
             }
             if (!found)
@@ -124,51 +128,58 @@ namespace Milestone_3
             }
         }
 
-        private void updateList(int itemNum)
+        private void updateList(int itemNum, Items item2)
         {
-            listView.Items[itemNum].SubItems[0].Text = item1.productNumber.ToString();
-            listView.Items[itemNum].SubItems[1].Text = item1.ProductName;
-            listView.Items[itemNum].SubItems[2].Text = item1.ProductPrice.ToString();
-            listView.Items[itemNum].SubItems[3].Text = item1.ProductStock.ToString();
-        }
-
-        private void listView_ColumnClick(object sender, ColumnClickEventArgs e)
-        {
-            // Determine if clicked column is already the column that is being sorted.
-            if (e.Column == lvwColumnSorter.SortColumn)
-            {
-                // Reverse the current sort direction for this column.
-                if (lvwColumnSorter.Order == SortOrder.Ascending)
-                {
-                    lvwColumnSorter.Order = SortOrder.Descending;
-                }
-                else
-                {
-                    lvwColumnSorter.Order = SortOrder.Ascending;
-                }
-            }
-            else
-            {
-                // Set the column number that is to be sorted; default to ascending.
-                lvwColumnSorter.SortColumn = e.Column;
-                lvwColumnSorter.Order = SortOrder.Ascending;
-            }
-
-            // Perform the sort with these new sort options.
-            this.listView.Sort();
+  
+            listView.Items[itemNum].SubItems[1].Text = item2.ProductName;
+            listView.Items[itemNum].SubItems[2].Text = item2.ProductPrice.ToString();
+            listView.Items[itemNum].SubItems[3].Text = item2.ProductStock.ToString();
+            wh.printArray();
         }
 
         private void listView_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             foreach (ListViewItem eachItem in listView.SelectedItems)
             {
-                Console.WriteLine(eachItem.Text);
                 item2 = wh.findProduct(double.Parse(eachItem.Text));
                 itemIDTextbox.Text = item2.productNumber.ToString();
                 itemNameTextbox.Text = item2.ProductName;
                 itemPriceTextbox.Text = item2.ProductPrice.ToString();
                 itemStockTextbox.Text = item2.ProductStock.ToString();
 
+            }
+        }
+
+        private void searchTextbox_TextChanged(object sender, EventArgs e)
+        {
+            if (searchTextbox.Text == "")
+            {
+                listView.Show();
+                listViewCopy.Hide();
+                listViewCopy.Items.Clear();
+            }
+            else
+            {
+                try
+                {
+                    item2 = wh.findProduct(double.Parse(searchTextbox.Text));
+                }
+                catch
+                {
+                    item2 = wh.findProduct(searchTextbox.Text);
+                }
+                if(item2 != null)
+                {
+                    lvi2 = new ListViewItem(item2.productNumber.ToString());
+                    lvi2.SubItems.Add(item2.ProductName);
+                    lvi2.SubItems.Add(item2.ProductPrice.ToString());
+                    lvi2.SubItems.Add(item2.ProductStock.ToString());
+                    lvi2.BackColor = Color.White;
+                    listViewCopy.Items.Add(lvi2);
+                    listViewCopy.Show();
+                    listView.Hide();
+                    listViewCopy.BackColor = System.Drawing.Color.White;
+                }
             }
         }
     }
