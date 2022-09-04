@@ -16,7 +16,7 @@ namespace Activity_15
         public Form1()
         {
             InitializeComponent();
-
+            //Entering in years into birth year combo box
             for (int i = 2022; i > 1910; i--)
             {
                 birthYearComboBox.Items.Add(i);
@@ -25,6 +25,8 @@ namespace Activity_15
             group.Text = "";
         }
 
+        // Checks if the month is change
+        // If it is display the correct amount of days in that month
         private void birthMonthComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(birthDayComboBox.Items.Count > 0)
@@ -59,7 +61,7 @@ namespace Activity_15
                 birthDayComboBox.Items.Add(i);
             }
         }
-
+        // Checks if the current year selected is a possible leap year
         private void birthYearComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (birthDayComboBox.Items.Count > 0)
@@ -81,7 +83,9 @@ namespace Activity_15
                 birthDayComboBox.Items.Add(i);
             }
         }
-
+        // turns all numbered strings into integers
+        // turns characters into there assci value
+        // Then show the next form
         private void getLuckyNumButton_Click(object sender, EventArgs e)
         {
             int birthyear = int.Parse(birthYearComboBox.Text);
@@ -96,6 +100,8 @@ namespace Activity_15
             form2.Show();
         }
 
+        // takes a string and gets the sum of the char assci values
+        // Returns a integer that is the sum of total assci values
         private int returnSumOfAssci(string text)
         {
             int sum = 0;

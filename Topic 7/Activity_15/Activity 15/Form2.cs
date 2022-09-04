@@ -15,9 +15,12 @@ namespace Activity_15
         public Form2(Form1 frm, int total)
         {
             InitializeComponent();
+            //Use assci number as seed for random number.
             Random rand = new Random(total);
+            //Get next random number between 1-50
             int lucky = rand.Next(1, 50);
-           this.Text = " Your lucky number is " + lucky;
+            // output lucky number
+            this.Text = " Your lucky number is " + lucky;
             luckyNumFinalLabel.Text = " Your lucky number is " + lucky;
         }
     }
