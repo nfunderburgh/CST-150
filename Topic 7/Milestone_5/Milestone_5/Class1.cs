@@ -6,6 +6,16 @@ namespace Milestone_3
 {
     public class Items
     {
+        // Item constructor
+        public Items(string productsName, double productPrice, int stock, int ProductNumber)
+        {
+            this.ProductName = productsName;
+            this.ProductPrice = productPrice;
+            this.ProductStock = stock;
+            this.productNumber = ProductNumber;
+        }
+
+        // Getting product name
         private string productsName;
         public string ProductName
         {
@@ -37,14 +47,6 @@ namespace Milestone_3
             set { ProductNumber = value; }
         }
 
-        public Items(string productsName, double productPrice, int stock, int ProductNumber)
-        {
-            this.ProductName = productsName;
-            this.ProductPrice = productPrice;
-            this.ProductStock = stock;
-            this.productNumber = ProductNumber;
-        }
-
         //Changes product name
         public void changeproductName(string newName)
         {
@@ -74,7 +76,7 @@ namespace Milestone_3
             this.Items.Add(item);
         }
 
-        //removes items 
+        //removes selected productNumber from the list
         public void removeItems(string id)
         {   int i = 0;
             int index = 0;
@@ -89,6 +91,7 @@ namespace Milestone_3
             this.Items.RemoveAt(index);
         }
 
+        //Prints the list onto the console for debugging.
         public void printArray()
         {
             foreach (Items item in Items)
@@ -98,6 +101,10 @@ namespace Milestone_3
             Console.WriteLine("---------------------");
         }
 
+        // takes a ingteger that is the product number 
+        // uses that number to check if the product is in the list
+        // If it is we return the item 
+        // If not we return null
         public Items findProduct(double productNumber)
         {
             Items item = null;
@@ -110,6 +117,11 @@ namespace Milestone_3
             }
             return item;
         }
+
+        // takes a string that is the product nname
+        // uses that number to check if the product is in the list
+        // If it is we return the item 
+        // If not we return null
         public Items findProduct(string productName)
         {
             Items item = null;

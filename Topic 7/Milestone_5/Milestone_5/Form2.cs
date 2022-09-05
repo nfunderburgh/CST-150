@@ -37,11 +37,14 @@ namespace Milestone_3
             this.listView.ListViewItemSorter = lvwColumnSorter;
         }
 
+        // Used to exit the program
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        // Checks if for selected items in list view
+        // any selected items are deleted from the list view and the item list
         private void deleteButton_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem eachItem in listView.SelectedItems)
@@ -53,6 +56,7 @@ namespace Milestone_3
             }
         }
 
+        // Reset all textboxes to blank
         private void resetButton_Click(object sender, EventArgs e)
         {
             itemIDTextbox.Text = "";
@@ -61,6 +65,9 @@ namespace Milestone_3
             itemStockTextbox.Text = "";
         }
 
+        // Checks if item is already in the list, if it is we tell the user the item is already in the lsit
+        // If its not we add the item into the list if everything is filled out
+        // Otherwise we tell the user to please fill the form entirely
         private void addNewButton_Click(object sender, EventArgs e)
         {
             bool found = false;
@@ -99,6 +106,7 @@ namespace Milestone_3
             wh.printArray();
         }
 
+        // Adds sub items into one item then we add that one item
         private void addItemsToListView()
         {
             lvi1 = new ListViewItem(item1.productNumber.ToString());
@@ -110,6 +118,9 @@ namespace Milestone_3
 
         }
 
+        // Tries to search for product 
+        // If item2 isn't null then we found the item 
+        // else we couldn't find the item in the list
         private void updateButton_Click(object sender, EventArgs e)
         {
             item2 = wh.findProduct(int.Parse(itemIDTextbox.Text));
@@ -132,6 +143,7 @@ namespace Milestone_3
             }
         }
 
+        // Updates the sub items and prints list for debugging
         private void updateList(int itemNum, Items item2)
         {
   
@@ -141,6 +153,7 @@ namespace Milestone_3
             wh.printArray();
         }
 
+        // Sorts the columns when clicked on in either ascending or descending order
         private void listView_ColumnClick(object sender, ColumnClickEventArgs e)
         {
             // Determine if clicked column is already the column that is being sorted.
@@ -167,6 +180,7 @@ namespace Milestone_3
             this.listView.Sort();
         }
 
+        //Add selected items back into the textboxes for easy updating
         private void listView_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             foreach (ListViewItem eachItem in listView.SelectedItems)
@@ -180,6 +194,8 @@ namespace Milestone_3
             }
         }
 
+        // When the user searchs an item
+        // Add the items to a different form and it will display a different form and hide the original
         private void searchTextbox_TextChanged(object sender, EventArgs e)
         {
             if (searchTextbox.Text == "")

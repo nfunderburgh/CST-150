@@ -33,22 +33,26 @@ namespace Milestone_3
             wh = new Warehouse();
         }
 
+        // Used to exit the program
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        // Checks if for selected items in list view
+        // any selected items are deleted from the list view and the item list
         private void deleteButton_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem eachItem in listView.SelectedItems)
             {
                 listView.Items.Remove(eachItem);
                 wh.removeItems(eachItem.Text);
-                wh.printArray();
+                wh.print();
 
             }
         }
 
+        // Reset all textboxes to blank
         private void resetButton_Click(object sender, EventArgs e)
         {
             itemIDTextbox.Text = "";
@@ -57,6 +61,9 @@ namespace Milestone_3
             itemStockTextbox.Text = "";
         }
 
+        // Checks if item is already in the list, if it is we tell the user the item is already in the lsit
+        // If its not we add the item into the list if everything is filled out
+        // Otherwise we tell the user to please fill the form entirely
         private void addNewButton_Click(object sender, EventArgs e)
         {
             bool found = false;
@@ -92,9 +99,10 @@ namespace Milestone_3
             {
                 MessageBox.Show("That item ID is already in the list");
             }
-            wh.printArray();
+            wh.print();
         }
 
+        // Adds sub items into one item then we add that one item
         private void addItemsToListView()
         {
             lvi1 = new ListViewItem(item1.productNumber.ToString());
@@ -106,37 +114,49 @@ namespace Milestone_3
 
         }
 
+        // Tries to search for product 
+        // If item2 isn't null then we found the item 
+        // else we couldn't find the item in the list
         private void updateButton_Click(object sender, EventArgs e)
         {
-            item2 = wh.findProduct(int.Parse(itemIDTextbox.Text));
-
-            bool found = false;
-            for (int i = 0; i < listView.Items.Count; i++)
+            try
             {
-                if(listView.Items[i].SubItems[0].Text == itemIDTextbox.Text)
+                item2 = wh.findProduct(int.Parse(itemIDTextbox.Text));
+            }
+            catch
+            {
+
+            }
+
+            if(item2 != null)
+            {
+                for (int i = 0; i < listView.Items.Count; i++)
                 {
-                    item2.changeproductName(itemNameTextbox.Text);
-                    item2.changeproductPrice(double.Parse(itemPriceTextbox.Text));
-                    item2.changeStock(int.Parse(itemStockTextbox.Text));
-                    found = true;
-                    updateList(i,item2);
+                    if (listView.Items[i].SubItems[0].Text == itemIDTextbox.Text)
+                    {
+                        item2.changeproductName(itemNameTextbox.Text);
+                        item2.changeproductPrice(double.Parse(itemPriceTextbox.Text));
+                        item2.changeStock(int.Parse(itemStockTextbox.Text));
+                        updateList(i, item2);
+                    }
                 }
             }
-            if (!found)
-            {
+            else {
                 MessageBox.Show("Could not find that item in the list");
             }
         }
 
+        // Updates the sub items and prints list for debugging
         private void updateList(int itemNum, Items item2)
         {
   
             listView.Items[itemNum].SubItems[1].Text = item2.ProductName;
             listView.Items[itemNum].SubItems[2].Text = item2.ProductPrice.ToString();
             listView.Items[itemNum].SubItems[3].Text = item2.ProductStock.ToString();
-            wh.printArray();
+            wh.print();
         }
 
+        //Add selected items back into the textboxes for easy updating
         private void listView_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             foreach (ListViewItem eachItem in listView.SelectedItems)
@@ -150,6 +170,8 @@ namespace Milestone_3
             }
         }
 
+        // When the user searchs an item
+        // Add the items to a different form and it will display a different form and hide the original
         private void searchTextbox_TextChanged(object sender, EventArgs e)
         {
             if (searchTextbox.Text == "")

@@ -20,6 +20,7 @@ namespace Milestone_3
             InitializeComponent();
 
             form2 = new Form2();
+            // Creating an instance of material skin manager and setting color values
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.EnforceBackcolorOnAllComponents = true;
             materialSkinManager.AddFormToManage(this);
@@ -27,6 +28,7 @@ namespace Milestone_3
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue900, Primary.Blue800, Primary.BlueGrey500, Accent.LightBlue700, TextShade.WHITE);
         }
 
+        // Used to check if the user selected the correct username password
         private void submitButton_Click(object sender, EventArgs e)
         {
             if(usernameTextbox.Text == "user" && passwordTextbox.Text == "123")
