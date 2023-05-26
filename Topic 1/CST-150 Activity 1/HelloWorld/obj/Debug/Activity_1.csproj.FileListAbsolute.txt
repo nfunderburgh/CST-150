@@ -20,3 +20,14 @@ C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1
 C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1.csproj.CoreCompileInputs.cache
 C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.exe
 C:\Users\APR Services\Desktop\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.pdb
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\bin\Debug\HelloWorld.exe.config
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\bin\Debug\HelloWorld.exe
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\bin\Debug\HelloWorld.pdb
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1.csproj.AssemblyReference.cache
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1.csproj.SuggestedBindingRedirects.cache
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.Form1.resources
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1.csproj.GenerateResource.cache
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\obj\Debug\Activity_1.csproj.CoreCompileInputs.cache
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.exe
+D:\Github\CST-150\Topic 1\CST-150 Activity 1\HelloWorld\obj\Debug\HelloWorld.pdb

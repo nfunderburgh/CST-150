@@ -23,7 +23,7 @@ namespace CST_150_Activity_2
             try
             {
                 int days = 0;
-                int hours = 0; ;
+                int hours = 0;
                 int minutes = 0;
                 int aDayInSeconds = 86400;
                 int aHourInSeconds = 3600;
